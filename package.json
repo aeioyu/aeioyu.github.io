@@ -8,7 +8,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "deploy": "next build && next export -o docs && git checkout -- docs/.nojekyll && git add docs && git commit -m \"chore: regen site\""
+    "export": "yarn run build && next export",
+    "deploy": "yarn export && touch out/.nojekyll && gh-pages -t -d out"
   },
   "keywords": [],
   "author": "",
@@ -33,6 +34,7 @@
     "@types/react": "^16.9.25",
     "@types/styled-components": "^5.0.1",
     "babel-plugin-styled-components": "^1.10.7",
+    "gh-pages": "^2.2.0",
     "typescript": "^3.8.3"
   }
 }
