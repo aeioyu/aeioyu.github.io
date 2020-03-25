@@ -9,7 +9,8 @@
     "build": "next build",
     "start": "next start",
     "export": "yarn run build && next export",
-    "deploy": "yarn export && touch out/.nojekyll && gh-pages -t -d out"
+    "clean": "rm -rf node_modules/gh-pages/.cache",
+    "deploy": "yarn clean && yarn export && touch out/.nojekyll && gh-pages -t -d out"
   },
   "keywords": [],
   "author": "",
