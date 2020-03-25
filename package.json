@@ -8,7 +8,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export -o docs"
+    "deploy": "next build && next export -o docs && git checkout -- docs/.nojekyll && git add docs && git commit -m \"chore: regen site\""
   },
   "keywords": [],
   "author": "",
