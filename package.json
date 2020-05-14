@@ -1,41 +1,35 @@
 {
-  "name": "calendar-summary",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "export": "yarn run build && next export",
-    "clean": "rm -rf node_modules/gh-pages/.cache",
-    "deploy": "yarn clean && yarn export && touch out/.nojekyll && gh-pages -t -d out"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "name": "aeioyu.github.io",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "axios": "^0.19.2",
-    "dayjs": "^1.8.23",
-    "lodash.isempty": "^4.4.0",
-    "next": "^9.3.1",
-    "next-cookies": "^2.0.3",
-    "node-fetch": "^2.6.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "styled-components": "^5.0.1",
-    "swr": "^0.1.18",
-    "unfetch": "^4.1.0"
+    "react-helmet": "^6.0.0",
+    "react-scripts": "3.4.1"
   },
-  "devDependencies": {
-    "@types/lodash.isempty": "^4.4.6",
-    "@types/node": "^13.9.2",
-    "@types/node-fetch": "^2.5.5",
-    "@types/react": "^16.9.25",
-    "@types/styled-components": "^5.0.1",
-    "babel-plugin-styled-components": "^1.10.7",
-    "gh-pages": "^2.2.0",
-    "typescript": "^3.8.3"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
